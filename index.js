@@ -12,6 +12,7 @@ function getRandomNumbers() {
   let randomNumber = Math.floor(Math.random() * 11) + 1;
 
   //if randomNumber 1 0R 11 ask the player what they prefer.
+  
   return randomNumber;
 }
 
@@ -63,3 +64,5 @@ function askCard() {
     displayCards();
   }
 }
+
+
