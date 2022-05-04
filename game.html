@@ -21,17 +21,23 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="text-center">
-        <h2 id="message-el">Want to play a round?</h2>
-        <button class="btn-start-game btn-primary" onclick="startGame()">
-          START GAME
-        </button>
-        <button class="btn-ask-card btn-success" onclick="askCard()">
-          ASK FOR A CARD
-        </button>
-        <p id="cards-el">Cards:</p>
-        <p id="sum-el">Sum:</p>
+    <div class="title">
+      <h2 id="message-el">Want to play a round?</h2>
       </div>
+        <div class="game-container">
+          <div class="btn-container">
+            <button class="btn-start-game btn-primary" onclick="startGame()">
+              START GAME
+            </button>
+            <button class="btn-ask-card btn-success" onclick="askCard()">
+              ASK FOR A CARD
+            </button>
+          </div>
+          <div class="cards-display">
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+          </div>
+        </div>
     </div>
     <script src="index.js"></script>
   </body>
