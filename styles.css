@@ -19,30 +19,13 @@ body {
   height: 100%;
   padding: 10px;
   position: absolute;
-  /* width: 1728px;
-  height: 1117px;
-  left: 0px;
-  top: 0px; */
   background-image: url(./images/blackjack1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background: linear-gradient(
-    247.32deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(248, 248, 248, 0.225002) 14.33%,
-    rgba(221, 221, 221, 0.09276) 39.58%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background-color: black; */
 }
 
 .title {
-  /*   position: absolute;
-  width: 491px;
-  height: 374px
-  left: 646px; 
-  top: 204px; */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
@@ -70,10 +53,10 @@ body {
   position: relative;
   animation-name: btn-let-play;
   animation-duration: 4s;
-  animation-direction: normal; 
+  animation-direction: normal;
 }
 
- @keyframes btn-let-play {
+@keyframes btn-let-play {
   0% {
     left: 0px;
   }
@@ -84,3 +67,71 @@ body {
     left: 0px;
   }
 }
+
+/* game.html */
+
+.container-fluid-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-container {
+  height: 90%;
+  width: 90%;
+  padding-top: 20px;
+}
+
+.btn-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px;
+  grid-gap: 40px;
+}
+
+.btn-start-game {
+  border: hidden;
+  border-radius: 7px;
+  background-color: #f02525;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 10px;
+}
+.btn-ask-card {
+  border: hidden;
+  border-radius: 7px;
+  background-color: #cfbd1a;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.cards-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  height: 50%;
+}
+
+#cards-el{
+  font-size: 25px;
+  margin-right: 650px;
+  text-decoration: underline;
+}
+
+#sum-el{
+  font-size:25px;
+  text-decoration: underline;
+}
+
+#message-el,
+#cards-el,
+#sum-el {
+  color: white;
+}
+
+/* .game-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+} */
